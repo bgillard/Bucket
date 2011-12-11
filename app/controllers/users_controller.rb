@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(params[:user])
 	if @user.save
+		login @user
 		flash[:success] = "Welcome to your bucket list!"
 		redirect_to @user
 	else
