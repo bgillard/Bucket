@@ -10,4 +10,15 @@ class UsersController < ApplicationController
     @title = "Register"
   end
   
+  def create
+  	@user = User.new(params[:user])
+	if @user.save
+		flash[:success] = "Welcome to your bucket list!"
+		redirect_to @user
+	else
+		@title = "Register"
+  		render 'new'
+	end
+  end
+  
 end
