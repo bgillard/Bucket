@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 10px auto;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+#header {
+	margin: 0 auto;
+	width: 960px;
+}
+
+#header .name {
+	float: right;
+	margin-top: 20px;
+}
+
+#menu {
+	background:url(../images/menu.png) repeat-x;
+	height: 34px;
+	border: 1px solid black;
+	margin-top: 8px;
+}
+
+#menu ul {
+	float: right;
+	list-style: none;
+	margin: 9px;
+}
+
+#menu li, li a {
+	text-decoration: none;
+	color: white;
+	float: left;
+	margin-right: 5px;
+}
+
+#container {
+	margin: 0 auto;
+	width: 908px;
+	padding: 25px;
+	border: 1px solid black;
+}
+
+#profile {
+	width: 200px;
+	float: left;
+	background-color: :#66C;
+}
+
+#profile p {
+	line-height: 18px;
+	width: 200px;
+}
+
+#profile img {
+	border: 1px solid black;
+	border-top: none;
+}
+
+#bucket {
+	text-align: center;
+	width: 379px;
+	float: left;
+	border-right: 1px dashed black;
+}
+
+#bucket h1 {
+	margin: 15px 0px 0px 0px;
+}
+
+#completed {
+	text-align: center;
+	width: 380px;
+	float: left;
+}
+
+.itemgoal {
+	width: 260px;
+	border: 1px dashed black;
+	padding: 15px;
+	background-color: #F99;
+	margin: 10px auto 10px auto;
+}
+
+.itemcomplete {
+	width: 260px;
+	border: 1px dashed black;
+	padding: 15px;
+	background-color: #6F9;
+	margin: 10px auto 10px auto;
+}
+
+#completed h1 {
+	margin: 15px 0px 0px 0px;
+}
+	
