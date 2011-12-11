@@ -37,6 +37,15 @@ body {
 	margin-right: 5px;
 }
 
+.client {
+	margin-top: 15px;
+}
+
+.client a {
+	text-decoration: none;
+	color: black;
+}
+
 #container {
 	margin: 0 auto;
 	width: 908px;
