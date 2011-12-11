@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
 
-  def new
-    @title = "Register"
+  def show
+    @user = User.find_by_id(params[:id])
+	@title = @user.name
   end
   
-  def show
-    @user = User.find(params[:id])
+  def new
+    @title = "Register"
   end
   
 end
