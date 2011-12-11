@@ -1,9 +1,9 @@
-<% if @user.errors.any? %>
+<% if object.errors.any? %>
 
 <div id="errors">
-	<p><%= pluralize(@user.errors.count, "problem") %> occurred while processing the following fields:</p>
+	<p><%= pluralize(object.errors.count, "problem") %> occurred while processing the following fields:</p>
 	<ul>
-		<% @user.errors.full_messages.each do |message| %>
+		<% object.errors.full_messages.each do |message| %>
 			<li><%= message %></li>
 		<% end %>
 	</ul>

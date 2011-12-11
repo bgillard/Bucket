@@ -1,2 +1,17 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% if logged_in? %>
+
+	<h1>What do you want to accomplish?</h1>
+	
+	<%= render 'shared/micropost_form' %>
+
+<% else %>
+
+<h1>Welcome to Fill Your Bucket!</h1>
+
+<p>Spill Your Bucket is an online platform that allows users to organize their goals and aspirations.</p>
+
+<h2>We are your virtual bucket list!</h2>
+
+<p>Register today and connect with other goal-oriented, like-minded individuals!</p>
+
+<% end %>
