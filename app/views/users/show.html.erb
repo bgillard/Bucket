@@ -1,6 +1,6 @@
-<h1>
+<div class="leftmenu">
 	<%= gravatar_for @user %>
-	<%= @user.name %>
-</h1>
-
-<p>URL <%= link_to user_path(@user), @user %></p>
+	<br />
+	<h1><%= @user.name %></h1>
+	<p>URL <%= link_to user_path(@user), @user %></p>
+</div>
