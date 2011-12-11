@@ -4,5 +4,6 @@ Bucketlist::Application.routes.draw do
 	
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
+  match '/register', :to => 'users#new'
   
 end
