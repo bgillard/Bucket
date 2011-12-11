@@ -1,6 +1,14 @@
-<div class="leftmenu">
+<div id="profile">
 	<%= gravatar_for @user %>
 	<br />
 	<h1><%= @user.name %></h1>
-	<p>URL <%= link_to user_path(@user), @user %></p>
+	<p>Goals: <%= @user.microposts.count %>
+	<p>URL: <%= link_to user_path(@user), @user %></p>
+</div>
+
+<div id="bucket">
+	<h1>Goals</h1>
+	<% if @user.microposts.any? %>
+		<%= render @microposts %>
+	<% end %>
 </div>

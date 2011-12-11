@@ -48,15 +48,19 @@ body {
 
 #container {
 	margin: 0 auto;
-	width: 908px;
-	padding: 25px;
+	width: 958px;
 	border: 1px solid black;
 }
 
 #profile {
+	height: 100%;
+	padding:25px;
+	display: inline-block;
 	width: 200px;
-	float: left;
-	background-color: :#66C;
+	background-color: #98AFC7;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	position: absolute;
 }
 
 #profile p {
@@ -66,14 +70,14 @@ body {
 
 #profile img {
 	border: 1px solid black;
-	border-top: none;
 }
 
 #bucket {
+	display: inline-block;
 	text-align: center;
 	width: 379px;
-	float: left;
-	border-right: 1px dashed black;
+	margin-bottom: 11px;
+	margin-left: 250px;
 }
 
 #bucket h1 {

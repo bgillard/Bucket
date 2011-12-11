@@ -11,6 +11,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by_id(params[:id])
+	@microposts = @user.microposts
 	@title = @user.name
   end
   
