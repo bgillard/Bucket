@@ -1,4 +1,7 @@
 <h1>Registration</h1>
+<p>Register for an account here! After you sign up, you'll be directed to your profile page.</p><p>From here, you can edit your profile or begin posting goals for the world to see!</p>
+
+<br />
 
 <%= form_for(@user)  do |f| %>
 	<%= render 'shared/error_messages', :object => f.object %>
@@ -7,16 +10,19 @@
 		<br />
 		<%= f.text_field :name %>
 	</div>
+	<br />
 	<div class="field">
 		<%= f.label :email %>
 		<br />
 		<%= f.text_field :email %>
 	</div>
+	<br />
 	<div class="field">
 		<%= f.label :password %>
 		<br />
 		<%= f.password_field :password %>
 	</div>
+	<br />
 	<div class="field">
 		<%= f.label :password_confirmation, "Confirm password" %>
 		<br />

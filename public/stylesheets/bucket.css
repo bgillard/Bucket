@@ -48,19 +48,31 @@ body {
 
 #container {
 	margin: 0 auto;
-	width: 958px;
+	width: 908px;
 	border: 1px solid black;
+	padding: 25px;
+}
+
+.flash.success {
+	padding: 10px;
+	background-color: #6F6;
+	border: 2px solid #090;
+}
+
+#errors {
+	padding: 10px;
+	background-color: #F33;
+	border: 2px solid #F00;
+	margin-bottom: 25px;
 }
 
 #profile {
-	height: 100%;
 	padding:25px;
 	display: inline-block;
 	width: 200px;
+	vertical-align: top;
 	background-color: #98AFC7;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
-	position: absolute;
+	border: 1px solid black;
 }
 
 #profile p {
@@ -74,14 +86,12 @@ body {
 
 #bucket {
 	display: inline-block;
-	text-align: center;
-	width: 379px;
-	margin-bottom: 11px;
-	margin-left: 250px;
+	padding-left: 25px;
+	width: 500px;
 }
 
-#bucket h1 {
-	margin: 15px 0px 0px 0px;
+#bucket h2 {
+	margin: 0px 0px 0px 0px;
 }
 
 #completed {
@@ -91,9 +101,8 @@ body {
 }
 
 .itemgoal {
-	width: 260px;
 	border: 1px dashed black;
-	padding: 15px;
+	padding: 5px;
 	background-color: #F99;
 	margin: 10px auto 10px auto;
 }
@@ -108,5 +117,9 @@ body {
 
 #completed h1 {
 	margin: 15px 0px 0px 0px;
+}
+
+.microform textarea {
+	height: 75px;
 }
 	
