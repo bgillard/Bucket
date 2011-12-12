@@ -1,5 +1,5 @@
 <div id="profile">
-	<%= gravatar_for @user %>
+	<%= gravatar_for @user, :size => 150 %>
 	<br />
 	<h1><%= @user.name %></h1>
 	<p>Goals: <%= @user.microposts.count %>
@@ -7,7 +7,7 @@
 </div>
 
 <div id="bucket">
-	<h1>Goals</h1>
+	<h2>These are my goals!</h2>
 	<% if @user.microposts.any? %>
 		<%= render @microposts %>
 	<% end %>
